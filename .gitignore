@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Environment
+.env
+.env.local
+!.env.example
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+logs/
+
+# Docker local data
+.docker-data/

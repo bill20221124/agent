@@ -1,0 +1,14 @@
+services:
+  claude-adk:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    container_name: claude-adk-dev
+    working_dir: /workspace/agents/claude-adk
+    volumes:
+      - ../:/workspace
+    env_file:
+      - ./env/.env.example
+    command: sleep infinity
+    ports:
+      - "8000:8000"
