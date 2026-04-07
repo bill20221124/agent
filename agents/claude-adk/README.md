@@ -1,6 +1,6 @@
 # Claude ADK Agent (Python)
 
-## Run locally in dev container terminal
+## Quick Start
 
 ```bash
 python3 -m venv .venv
@@ -8,6 +8,14 @@ python3 -m venv .venv
 python -m pip install -e .[dev]
 python -m src.main
 python -m pytest
+```
+
+## Clean Workspace
+
+```bash
+rm -rf .pytest_cache __pycache__
+find . -type f -name '*.pyc' -delete
+find . -type f -name '.DS_Store' -delete
 ```
 
 ## Notes
